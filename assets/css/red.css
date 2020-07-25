@@ -1,0 +1,331 @@
+/*---------------------------------------------------------------------------------------
+* Template Name      :  Kevin - Responsive Bootstrap 4 HTML Personal Template           |
+* Author             :  Narek Sukiasyan                                                 |
+* Version            :  1.0.0                                                           |
+* Created            :  April 2020                                                      |
+* File Description   :  Color Scheme css file of the template                            |
+*----------------------------------------------------------------------------------------
+*/
+/******************
+Table of Content
+
+    1. SETTINGS
+        1.1 Preloader
+        1.2 Bootstrap Settings
+        1.3 Buttons
+    2. HELPERS
+        2.1 OWL Slider
+    3. HEADER
+        3.1 General Header Style
+        3.2 Horizontal Header Style
+    4. HOME SECTION
+    5. ABOUT SECTION
+    6. SERVICE SECTION
+    7. RESUME SECTION
+    8. BLOG SECTION
+    9. CONTACT SECTION
+    10. FACTS SECTION
+    11. VIDEO SECTION
+    12. TESTIMONIAL SECTION
+        
+
+******************/
+/*=================
+    1. SETTINGS
+==================*/
+a:hover {
+  color: #e54144;
+}
+
+/* 1.1 Preloader  */
+#preloader .loader {
+  -webkit-animation: loader 1s linear infinite;
+          animation: loader 1s linear infinite;
+  background: rgba(255, 33, 56, 0.8);
+}
+
+@-webkit-keyframes loader {
+  0% {
+    background: rgba(255, 33, 56, 0.8);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    background: rgba(255, 33, 56, 0);
+  }
+}
+
+@keyframes loader {
+  0% {
+    background: rgba(255, 33, 56, 0.8);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    background: rgba(255, 33, 56, 0);
+  }
+}
+
+section .form-group.form-focused label {
+  color: #e54144;
+}
+
+/* 1.2 Bootstrap Settings */
+.bg-primary {
+  background-color: #e54144 !important;
+}
+
+.text-primary {
+  color: #e54144 !important;
+}
+
+blockquote {
+  border-left: 5px solid #e54144;
+}
+
+/* 1.3 Buttons  */
+.btn-primary {
+  color: #fff;
+  background-color: #e54144;
+  border: 1px solid #e54144;
+}
+
+.btn-primary:hover {
+  background-color: #b33032;
+  color: #fff;
+  border-color: #b33032;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  color: #fff;
+  background-color: #e54144;
+  border-color: #e54144;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 33, 56, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 33, 56, 0.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #b33032;
+  color: #fff;
+  border-color: #b33032;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #b33032;
+  color: #fff;
+  border-color: #b33032;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #8D1622;
+  color: #fff;
+  border-color: #8D1622;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #b33032;
+  color: #fff;
+  border-color: #b33032;
+}
+
+.btn-outline-primary {
+  border: 1px solid #e54144;
+  color: #e54144;
+  background: transparent;
+}
+
+.btn-outline-primary:hover {
+  background: #e54144;
+  border-color: #e54144;
+  color: #fff;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active {
+  border-color: #8D1622;
+  background-color: #8D1622;
+  color: #e54144;
+}
+
+.btn-outline-primary.focus, .btn-outline-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 33, 56, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 33, 56, 0.5);
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+  color: #e54144;
+}
+
+.btn-loading {
+  color: rgba(0, 0, 0, 0);
+}
+
+.btn-loading:hover, .btn-loading:active, .btn-loading:focus {
+  color: rgba(0, 0, 0, 0);
+}
+
+.btn-loading:before {
+  border: 6px solid rgba(255, 255, 255, 0.5);
+  -webkit-animation: btn-loader 1s linear infinite;
+          animation: btn-loader 1s linear infinite;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -webkit-transform-origin: 0%;
+          transform-origin: 0%;
+}
+
+@-webkit-keyframes btn-loader {
+  0% {
+    border-color: rgba(255, 255, 255, 0.9);
+    -webkit-transform: scale(0) translate(-50%);
+            transform: scale(0) translate(-50%);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0);
+    -webkit-transform: scale(1) translate(-50%);
+            transform: scale(1) translate(-50%);
+  }
+}
+
+@keyframes btn-loader {
+  0% {
+    border-color: rgba(255, 255, 255, 0.9);
+    -webkit-transform: scale(0) translate(-50%);
+            transform: scale(0) translate(-50%);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0);
+    -webkit-transform: scale(1) translate(-50%);
+            transform: scale(1) translate(-50%);
+  }
+}
+
+/*=================
+    2. HELPERS
+==================*/
+section .section-title h2:before {
+  background-color: #e54144;
+}
+
+/* 2.1 OWL Slider */
+.owl-nav button span {
+  color: #D4727C;
+}
+
+.owl-nav button span:hover {
+  color: #e54144;
+}
+
+.owl-dots .owl-dot span {
+  background-color: #D4727C;
+}
+
+.owl-dots .owl-dot.active span {
+  background-color: #e54144;
+}
+
+/*=================
+    3. HEADER
+==================*/
+/* 3.1 General Header Style */
+header .site-logo a span {
+  color: #e54144;
+}
+
+/* 3.2 Horizontal Header Style */
+ul li a:after {
+  background-color: #e54144;
+}
+
+ul li a.active {
+  color: #e54144;
+}
+
+/*====================
+    4. HOME SECTION
+=====================*/
+section.home h1:before {
+  background-color: #e54144;
+}
+
+h1 span {
+  color: #e54144;
+}
+
+/*====================
+    5. ABOUT SECTION
+=====================*/
+section.about .about-info i {
+  color: #e54144;
+}
+
+/*=======================
+    6. SERVICE SECTION
+========================*/
+.service-single .service-icon {
+  color: #e54144;
+}
+
+/*=======================
+    7. RESUME SECTION
+========================*/
+.resume-list h4 {
+  color: #e54144;
+}
+
+.skill .progress-bar {
+  background-color: #e54144;
+}
+
+/*=======================
+    8. BLOG SECTION
+========================*/
+.news-item .news-content .news-title .blog-permalink:hover h3 {
+  color: #e54144;
+}
+
+.news-item .news-content .news-meta-single span:not(.meta-value) {
+  color: #e54144;
+}
+
+/*=======================
+    9. CONTACT SECTION
+========================*/
+.contact-icon {
+  color: #e54144;
+}
+
+/*==========================
+    10. FACTS SECTION
+===========================*/
+section.facts .fact-single .fact-icon, div.section.facts .fact-single .fact-icon {
+  color: #e54144;
+}
+
+/*==========================
+    11. VIDEO SECTION
+===========================*/
+.btn-video-play {
+  color: #e54144;
+}
+
+/*==========================
+    12. TESTIMONIAL SECTION
+===========================*/
+.testimonial-box .testimonial_icon {
+  color: #e54144;
+}
+
+/*Switcher Button*/
+.switcher-button {
+  background-color: #e54144;
+}
+/*# sourceMappingURL=red.css.map */
